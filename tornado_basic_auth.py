@@ -17,7 +17,7 @@ def basic_auth(auth_func=lambda *args, **kwargs: True):
             create_auth_header(handler)
             return False
         else:
-            auth_decoded = base64.decodestring(auth_header[6:])
+            auth_decoded = base64.b64decode(auth_header[6:]).decode()
             user, pwd = auth_decoded.split(':', 2)
 
             if auth_func(user, pwd):

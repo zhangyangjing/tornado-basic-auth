@@ -18,7 +18,7 @@ classifiers = [
 
 kw = {
     'name':             'tornado-basic-auth',
-    'version':          '0.1.0',
+    'version':          '0.1.1',
     'description':      'basic authentication for tornado',
     'long_description': open('README.rst').read(),
     'author':           'Yangjing Zhang',
